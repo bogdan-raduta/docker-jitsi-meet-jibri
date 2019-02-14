@@ -14,10 +14,10 @@ var interfaceConfig = {
     INITIAL_TOOLBAR_TIMEOUT: 20000,
     TOOLBAR_TIMEOUT: 4000,
     TOOLBAR_ALWAYS_VISIBLE: true,
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Designer',
+    DEFAULT_REMOTE_DISPLAY_NAME: 'Patient',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
     SHOW_JITSI_WATERMARK: false,
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    JITSI_WATERMARK_LINK: 'https://gethomecare.ml',
 
     // if watermark is disabled by default, it can be shown only for guests
     SHOW_WATERMARK_FOR_GUESTS: false,
@@ -27,8 +27,8 @@ var interfaceConfig = {
     SHOW_DEEP_LINKING_IMAGE: false,
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
     DISPLAY_WELCOME_PAGE_CONTENT: false,
-    APP_NAME: 'UX Research',
-    NATIVE_APP_NAME: 'Jitsi Meet',
+    APP_NAME: 'HomeCare',
+    NATIVE_APP_NAME: 'HomeCare',
     LANG_DETECTION: false, // Allow i18n to detect the system language
     INVITATION_POWERED_BY: false,
 
@@ -45,7 +45,7 @@ var interfaceConfig = {
      * jwt.
      */
     TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+        'microphone', 'camera','localrecording', 'closedcaptions', 'desktop', 'fullscreen',
         'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
         'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
         'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
@@ -171,7 +171,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    RECENT_LIST_ENABLED: true
+    RECENT_LIST_ENABLED: false
 
     /**
      * How many columns the tile view can expand to. The respected range is

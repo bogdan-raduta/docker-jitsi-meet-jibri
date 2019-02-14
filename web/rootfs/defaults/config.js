@@ -16,35 +16,35 @@ var config = {
 
     hosts: {
         // XMPP domain.
-        domain: 'jitsi-meet.example.com',
+        domain: 'jitsi-meet.gethomecare.ml',
 
         // XMPP MUC domain. FIXME: use XEP-0030 to discover it.
-        muc: 'conference.jitsi-meet.example.com'
+        muc: 'conference.jitsi-meet.gethomecare.ml'
 
         // When using authentication, domain for guest users.
-        // anonymousdomain: 'guest.example.com',
+        // anonymousdomain: 'guest.gethomecare.ml',
 
         // Domain for authenticated users. Defaults to <domain>.
-        // authdomain: 'jitsi-meet.example.com',
+        // authdomain: 'jitsi-meet.gethomecare.ml',
 
         // Jirecon recording component domain.
-        // jirecon: 'jirecon.jitsi-meet.example.com',
+        // jirecon: 'jirecon.jitsi-meet.gethomecare.ml',
 
         // Call control component (Jigasi).
-        // call_control: 'callcontrol.jitsi-meet.example.com',
+        // call_control: 'callcontrol.jitsi-meet.gethomecare.ml',
 
         // Focus component domain. Defaults to focus.<domain>.
-        // focus: 'focus.jitsi-meet.example.com',
+        // focus: 'focus.jitsi-meet.gethomecare.ml',
     },
 
     // BOSH URL. FIXME: use XEP-0156 to discover it.
-    bosh: '//jitsi-meet.example.com/http-bind',
+    bosh: '//jitsi-meet.gethomecare.ml/http-bind',
 
     // The name of client node advertised in XEP-0115 'c' stanza
     clientNode: 'http://jitsi.org/jitsimeet',
 
     // The real JID of focus participant - can be overridden here
-    // focusUserJid: 'focus@auth.jitsi-meet.example.com',
+    // focusUserJid: 'focus@auth.jitsi-meet.gethomecare.ml',
 
 
     // Testing / experimental features.
@@ -337,7 +337,7 @@ var config = {
     // A list of scripts to load as lib-jitsi-meet "analytics handlers".
     // analyticsScriptUrls: [
     //      "libs/analytics-ga.js", // google-analytics
-    //      "https://example.com/my-custom-analytics.js"
+    //      "https://gethomecare.ml/my-custom-analytics.js"
     // ],
 
     // The Google Analytics Tracking ID
@@ -349,25 +349,25 @@ var config = {
         // shard: "shard1",
         // region: "europe",
         // userRegion: "asia"
-    }
+    },
 
     // Local Recording
     //
 
-    // localRecording: {
+     localRecording: {
     // Enables local recording.
     // Additionally, 'localrecording' (all lowercase) needs to be added to
     // TOOLBAR_BUTTONS in interface_config.js for the Local Recording
     // button to show up on the toolbar.
     //
-    //     enabled: true,
+         enabled: true,
     //
 
     // The recording format, can be one of 'ogg', 'flac' or 'wav'.
-    //     format: 'flac'
+        format: 'flac'
     //
 
-    // }
+     }
 
     // Options related to end-to-end (participant to participant) ping.
     // e2eping: {
